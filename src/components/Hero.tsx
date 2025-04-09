@@ -30,7 +30,7 @@ const Hero = () => {
             <span className="text-sm font-medium text-primary/80">Trusted by hundreds of companies</span>
           </div>
           
-          <h1 className="text-[86px] leading-[1] font-bold tracking-[-0.03em] text-primary mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
+          <h1 className="text-[86px] leading-[1] font-bold tracking-[-0.03em] mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#0EA5E9] to-[#1EAEDB]">
             Save time &<br />money on AWS
           </h1>
           

@@ -1,33 +1,34 @@
+
 const faqs = [
   {
-    question: "How do I detect idle resources?",
-    answer: "Our platform automatically scans and identifies unused AWS resources...",
-    iconBg: "bg-pink-50",
-  },
-  {
-    question: "Why can't I get any support?",
-    answer: "We provide 24/7 dedicated support to help you with any AWS-related issues...",
-    iconBg: "bg-purple-50",
-  },
-  {
-    question: "How can I forecast accurately?",
-    answer: "Our advanced analytics and machine learning models provide precise cost forecasting...",
+    question: "How does ad-based CAPTCHA work?",
+    answer: "Users interact with branded content instead of solving puzzles. This creates engagement while verifying they're human, generating revenue for you.",
     iconBg: "bg-blue-50",
   },
   {
-    question: "Is it time to buy a savings plan?",
-    answer: "Our platform analyzes your usage patterns to recommend optimal savings plans...",
-    iconBg: "bg-pink-50",
+    question: "Will this affect my site's security?",
+    answer: "No, our solution provides superior bot protection compared to traditional CAPTCHAs while being more user-friendly.",
+    iconBg: "bg-green-50",
   },
   {
-    question: "How do I reduce data transfer costs?",
-    answer: "We analyze your data transfer patterns and provide optimization recommendations...",
-    iconBg: "bg-pink-50",
-  },
-  {
-    question: "Why did I get a surprise AWS bill?",
-    answer: "We help prevent unexpected costs by monitoring your usage in real-time...",
+    question: "How much revenue can I expect?",
+    answer: "Revenue varies by traffic volume and audience, but most sites see $0.50-$2.00 per 1000 verifications.",
     iconBg: "bg-purple-50",
+  },
+  {
+    question: "Is integration complicated?",
+    answer: "Not at all! Replace your existing CAPTCHA with just a few lines of code. Full documentation and support included.",
+    iconBg: "bg-pink-50",
+  },
+  {
+    question: "What about ad quality and relevance?",
+    answer: "We partner with premium brands and use intelligent targeting to show relevant, high-quality ads to your users.",
+    iconBg: "bg-yellow-50",
+  },
+  {
+    question: "Can I control what ads are shown?",
+    answer: "Yes, you have full control over ad categories, can blacklist specific brands, and set content guidelines.",
+    iconBg: "bg-indigo-50",
   },
 ];
 
@@ -35,16 +36,17 @@ const FAQ = () => {
   return (
     <section id="faq" className="py-24 px-6 bg-surface">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center gap-2 justify-center mb-4">
-          <div className="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center">
-            <span className="text-sm">?</span>
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full mb-6">
+            <span className="text-sm font-medium text-blue-700">Common Questions</span>
           </div>
-          <span className="text-sm text-secondary">The problem</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Everything You Need to Know
+          </h2>
+          <p className="text-xl text-secondary max-w-2xl mx-auto">
+            Get answers to the most frequently asked questions about Captcha Ads
+          </p>
         </div>
-        
-        <h2 className="text-4xl md:text-6xl font-bold text-center mb-16">
-          The cloud is complicated
-        </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {faqs.map((faq, index) => (
@@ -54,7 +56,7 @@ const FAQ = () => {
             >
               <div className={`w-12 h-6 ${faq.iconBg} rounded-full mb-6`} />
               <h3 className="text-xl font-medium mb-3">{faq.question}</h3>
-              <p className="text-secondary text-sm">{faq.answer}</p>
+              <p className="text-secondary text-sm leading-relaxed">{faq.answer}</p>
             </div>
           ))}
         </div>

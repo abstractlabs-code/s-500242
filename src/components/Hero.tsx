@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { Shield, Eye, DollarSign } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -27,45 +27,75 @@ const Hero = () => {
         <div className="flex flex-col items-center">
           {/* Badge above heading */}
           <div className="mb-6 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 shadow-sm">
-            <span className="text-sm font-medium text-primary/80">Trusted by hundreds of companies</span>
+            <span className="text-sm font-medium text-primary/80">Revolutionary Ad-Based Security</span>
           </div>
           
           <h1 className="text-[86px] leading-[1] font-bold tracking-[-0.03em] mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#0EA5E9] to-[#1EAEDB]">
-            Save time &<br />money on AWS
+            Turn Security<br />Into Revenue
           </h1>
           
           <div className="max-w-[660px] mx-auto mb-12">
             <p className="text-xl text-primary/70 leading-relaxed">
-              Savings, visibility, and infrastructure guardrails.
+              Replace traditional CAPTCHAs with engaging advertisements.
               <br />
-              One automated platform for cloud excellence.
+              Protect your site while generating revenue from every verification.
             </p>
+          </div>
+
+          {/* Key benefits */}
+          <div className="flex flex-wrap justify-center gap-6 mb-12">
+            <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full">
+              <Shield className="w-4 h-4 text-blue-600" />
+              <span className="text-sm font-medium">Bot Protection</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full">
+              <DollarSign className="w-4 h-4 text-green-600" />
+              <span className="text-sm font-medium">Revenue Generation</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full">
+              <Eye className="w-4 h-4 text-purple-600" />
+              <span className="text-sm font-medium">Better UX</span>
+            </div>
           </div>
 
           <div className="flex gap-4 mb-16">
             <Button size="lg" className="bg-highlight hover:bg-highlight/90 text-primary font-medium px-6 py-6 rounded-lg text-lg shadow-lg hover:shadow-xl transition-all">
-              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              Book a demo
+              <Shield className="w-5 h-5 mr-2" />
+              Start Free Trial
             </Button>
             
             <Button variant="outline" size="lg" className="border-gray-300 font-medium px-6 py-6 rounded-lg text-lg hover:bg-gray-100/50 transition-all">
-              See how it works
+              See Live Demo
             </Button>
           </div>
 
           <div className="max-w-[900px] mx-auto relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#F2FF44]/30 to-[#A3D8FF]/30 rounded-xl blur-md"></div>
-            <div className="relative rounded-xl border-4 border-white/80 shadow-2xl overflow-hidden">
-              <img 
-                src="https://antimetal.com/images/hero/preview.png" 
-                alt="Antimetal Demo Preview" 
-                className="w-full h-auto"
-              />
-              
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+            <div className="relative rounded-xl border-4 border-white/80 shadow-2xl overflow-hidden bg-white">
+              <div className="p-8">
+                <div className="bg-gray-100 rounded-lg p-6 mb-4">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-semibold text-lg">Captcha Ads in Action</h3>
+                    <div className="flex gap-2">
+                      <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded border-2 border-dashed border-gray-300 h-32 flex items-center justify-center">
+                    <div className="text-center">
+                      <Shield className="w-8 h-8 text-blue-500 mx-auto mb-2" />
+                      <p className="text-sm text-gray-600">Interactive Ad Captcha</p>
+                      <p className="text-xs text-gray-400">Secure + Profitable</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-between text-sm text-gray-500">
+                  <span>✓ Bot Protection</span>
+                  <span>✓ Revenue Stream</span>
+                  <span>✓ User Engagement</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
